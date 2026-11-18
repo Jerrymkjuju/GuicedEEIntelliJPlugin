@@ -1,4 +1,6 @@
 // Copyright 2000-2026 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
+// MODIFIED by Jerrymkjuju on 2026-11-18 for the unofficial community build 2.6.0.1 (issue #1).
+// Upstream: https://github.com/GuicedEE/GuicedEEIntelliJPlugin (Apache-2.0).
 package com.guicedee.intellij.guice;
 
 import com.guicedee.intellij.guice.constants.GuiceAnnotations;

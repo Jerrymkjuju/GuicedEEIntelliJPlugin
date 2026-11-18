@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.guicedee.intellij"
-version = "2.6.0"
+version = "2.6.0.1"
 
 repositories {
   mavenCentral()
@@ -49,6 +49,11 @@ intellijPlatform {
     }
 
     changeNotes = """
+      <h3>2.6.0.1 (unofficial community build)</h3>
+      <ul>
+        <li>Fix implicit-usage detection so unused private fields and the "usages" hint are no longer suppressed by class-level injection annotations (issue #1).</li>
+        <li>Restore the "N usages" code-vision hint on injected fields, including "no usages" when no source reference exists, while keeping their unused warnings suppressed (issue #1).</li>
+      </ul>
       <h3>2.6.0</h3>
       <ul>
         <li>Align generated Maven and Gradle projects with GuicedEE and test BOMs 2.6.0.</li>
@@ -56,8 +61,6 @@ intellijPlatform {
         <li>GuicedEE 2.6.0 adds modular Firebase Admin and Commercetools SDKs with shared modular support libraries.</li>
         <li>Select Firebase Admin and Commercetools independently in the project wizard, with matching Maven/Gradle dependencies and JPMS module names.</li>
         <li>Opt-in native-image starter beside jlink: SPI discovery, reflection registration and a modular GraalVM build guide.</li>
-        <li>Fix implicit-usage detection so unused private fields and the "usages" hint are no longer suppressed by class-level injection annotations (issue #1).</li>
-        <li>Restore the "N usages" code-vision hint on injected fields (including "0 usages") while keeping their unused warnings suppressed (issue #1).</li>
       </ul>
       <h3>2.5.0</h3>
       <ul>
